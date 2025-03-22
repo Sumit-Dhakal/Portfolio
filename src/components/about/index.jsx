@@ -6,6 +6,7 @@ const AboutDetails = () => {
   return (
     <section className="py-20 w-full">
       <div className="grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full">
+        {/* About Section */}
         <ItemLayout className={"col-span-full lg:col-span-8 row-span-2 flex-col items-start"}>
           <h2 className="text-xl md:text-2xl text-left w-full capitalize">
             Game Developer in the Making
@@ -18,12 +19,14 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
+        {/* Projects Completed */}
         <ItemLayout className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}>
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
             3+ <sub className="font-semibold text-base">projects completed</sub>
           </p>
         </ItemLayout>
 
+        {/* Learning Unreal Engine & C++ */}
         <ItemLayout className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}>
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
             Learning <sub className="font-semibold text-base">Unreal Engine & C++</sub>
@@ -40,6 +43,18 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
+        {/* GitHub Streak (Moved beside GitHub Stats) */}
+        <ItemLayout className={"col-span-full md:col-span-4 min-h-72"}>
+          <div className="w-full h-full">
+            <img
+              className="w-full h-full object-contain"
+              src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
+              alt="GitHub Streak"
+              loading="lazy"
+            />
+          </div>
+        </ItemLayout>
+
         {/* Tech Stack Icons */}
         <ItemLayout className={"col-span-full"}>
           <img
@@ -50,49 +65,34 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
-              {/* GitHub Streak */}
-        <ItemLayout className={"col-span-full md:col-span-6"}>
-          <div className="w-full h-full"> {/* Ensure the div fills the ItemLayout */}
-            <img
-              className="w-full h-full object-contain" // Use object-contain or object-cover as needed
-              src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
-              alt="GitHub Streak"
-              loading="lazy"
-            />
+        {/* Monster Shooter Repo (Separate ItemLayout, Left Side) */}
+        <ItemLayout className={"col-span-full md:col-span-6 min-h-72"}>
+          <div className="w-full h-full relative" style={{ paddingTop: "75%" }}>
+            <Link
+              href="https://github.com/Sumit-Dhakal/Monster_Shooter"
+              target="_blank"
+              className="absolute top-0 left-0 w-full h-full block"
+            >
+              <img
+                className="w-full h-full object-contain"
+                src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=radical&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=3&show_owner=true"
+                alt="Monster Shooter Game"
+                loading="lazy"
+              />
+            </Link>
           </div>
         </ItemLayout>
 
-        {/* Monster Shooter Repo and Video */}
-<ItemLayout className={"col-span-full md:col-span-6 min-h-72"}>
-          <div className="w-full h-full flex flex-col md:flex-row gap-4 items-center"> {/* Added items-center */}
-            {/* Left Side: Repo */}
-            <div className="w-full md:w-1/3 h-full relative" style={{ paddingTop: "75%" }}> {/* Added paddingTop for 4:3 aspect ratio */}
-              <Link
-                href="https://github.com/Sumit-Dhakal/Monster_Shooter"
-                target="_blank"
-                className="absolute top-0 left-0 w-full h-full block"
-              >
-                <img
-                  className="w-full h-full object-contain" // Changed back to object-contain
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=radical&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=3&show_owner=true" // Changed theme to radical
-                  alt="Monster Shooter Game"
-                  loading="lazy"
-                />
-              </Link>
-            </div>
-
-            {/* Right Side: Video */}
-            <div className="w-full md:w-2/3 h-full relative"> {/* Changed to md:w-2/3 */}
-              <div className="relative" style={{ paddingTop: "56.25%" }}>
-                <iframe
-                  src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
-                  className="absolute top-0 left-0 w-full h-full"
-                  frameborder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                  title="Monster Shooter Game"
-                />
-              </div>
-            </div>
+        {/* Monster Shooter Video (Separate ItemLayout, Right Side) */}
+        <ItemLayout className={"col-span-full md:col-span-6 min-h-72"}>
+          <div className="w-full h-full relative" style={{ paddingTop: "56.25%" }}>
+            <iframe
+              src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
+              className="absolute top-0 left-0 w-full h-full"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              title="Monster Shooter Game"
+            />
           </div>
         </ItemLayout>
       </div>
