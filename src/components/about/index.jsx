@@ -35,7 +35,7 @@ const AboutDetails = () => {
 
         {/* GitHub Stats (Decreased Height) */}
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
-          <div className="w-full max-h-48 overflow-hidden"> {/* Added max-h-48 */}
+          <div className="w-full h-auto"> {/* Added max-h-48 */}
             <img
               className="w-full h-auto"
               src="https://github-readme-stats.vercel.app/api?username=Sumit-Dhakal&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false"
