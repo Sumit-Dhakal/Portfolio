@@ -30,16 +30,6 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
-        {/* GitHub Top Languages */}
-        <ItemLayout className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=Sumit-Dhakal&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false"
-            alt="GitHub Languages"
-            loading="lazy"
-          />
-        </ItemLayout>
-
         {/* GitHub Stats */}
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
           <img
@@ -54,7 +44,7 @@ const AboutDetails = () => {
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
-            src="https://skillicons.dev/icons?i=unreal,c++,blueprints,git,github,linux"
+            src="https://skillicons.dev/icons?i=unreal,cpp,cs,blender,github"
             alt="Tech Stack"
             loading="lazy"
           />
