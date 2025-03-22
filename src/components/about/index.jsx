@@ -70,7 +70,7 @@ const AboutDetails = () => {
             <Link
               href="https://github.com/Sumit-Dhakal/Monster_Shooter"
               target="_blank"
-              className="w-full"
+              className="w-full h-auto"
             >
               <img
                 className="w-full h-auto"
