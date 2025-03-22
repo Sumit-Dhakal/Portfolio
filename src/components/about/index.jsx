@@ -72,7 +72,7 @@ const AboutDetails = () => {
               className="w-full"
             >
               <img
-                className="w-full h-[100px] md:h-[120px] object-contain"
+                className="w-full h-[100px] md:h-[80px] object-contain"
                 src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
                 alt="Monster Shooter Game"
                 loading="lazy"
@@ -84,7 +84,7 @@ const AboutDetails = () => {
                 <iframe
                 src="https://player.vimeo.com/video/1068487864?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1"
                 width="100%"
-                height="200"
+                height="100"
                 frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 title="Monster Shooter Game"
