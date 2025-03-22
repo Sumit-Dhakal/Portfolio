@@ -4,7 +4,7 @@ export const projectsData = [
     name: "Monster Shooter",
     description: "FPS game with A* AI pathfinding",
     date: "2025-03-06",
-    demoLink: "https://github.com/Sumit-Dhakal/Monster-Shooter",
+    demoLink: "https://github.com/Sumit-Dhakal/Monster_Shooter",
   },
   {
     id: 2,
