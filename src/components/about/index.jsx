@@ -64,17 +64,17 @@ const AboutDetails = () => {
 
         {/* Monster Shooter Repo and Video */}
 <ItemLayout className={"col-span-full md:col-span-6 min-h-72"}>
-          <div className="w-full h-full flex flex-col md:flex-row gap-4">
+          <div className="w-full h-full flex flex-col md:flex-row gap-4 items-center"> {/* Added items-center */}
             {/* Left Side: Repo */}
-            <div className="w-full md:w-1/3 h-full min-h-72"> {/* Added min-h-72 */}
+            <div className="w-full md:w-1/3 h-full relative" style={{ paddingTop: "75%" }}> {/* Added paddingTop for 4:3 aspect ratio */}
               <Link
                 href="https://github.com/Sumit-Dhakal/Monster_Shooter"
                 target="_blank"
-                className="w-full h-full block"
+                className="absolute top-0 left-0 w-full h-full block"
               >
                 <img
-                  className="w-full h-full object-cover" // Changed to object-cover
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=dark&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=3&show_owner=true" // Increased description_lines_count and added show_owner
+                  className="w-full h-full object-contain" // Changed back to object-contain
+                  src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=radical&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=3&show_owner=true" // Changed theme to radical
                   alt="Monster Shooter Game"
                   loading="lazy"
                 />
