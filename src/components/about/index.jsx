@@ -63,8 +63,9 @@ const AboutDetails = () => {
           </div>
         </ItemLayout>
         
-        {/* Right Side: Monster Shooter Repo with Video */}
+ {/* GitHub Streak and Monster Shooter Repo with Video */}
         <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
+          {/* Left Side: Monster Shooter Repo */}
           <div className="flex-1">
             <Link
               href="https://github.com/Sumit-Dhakal/Monster_Shooter"
@@ -78,17 +79,19 @@ const AboutDetails = () => {
                 loading="lazy"
               />
             </Link>
+          </div>
 
-            {/* Video inside Monster Shooter Repo */}
-            <div className="mt-4 h-auto">
-                <iframe
-                src="https://player.vimeo.com/video/1068487864?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1"
+          {/* Right Side: Monster Shooter Video */}
+          <div className="flex-1">
+            <div className="relative" style={{ width: "100%", paddingTop: "56.25%" }}>
+              <iframe
+                src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1"
                 width="100%"
-                height="100"
+                height="100%"
                 frameborder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 title="Monster Shooter Game"
-              ></iframe>
+              />
             </div>
           </div>
         </ItemLayout>
