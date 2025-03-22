@@ -63,10 +63,10 @@ const AboutDetails = () => {
         </ItemLayout>
 
         {/* Monster Shooter Repo and Video */}
-<ItemLayout className={"col-span-full md:col-span-6 min-h-64"}> {/* Added min-h-64 */}
+<ItemLayout className={"col-span-full md:col-span-6 min-h-72"}> {/* Increased to min-h-72 */}
           <div className="w-full h-full flex flex-col md:flex-row gap-4">
             {/* Left Side: Repo */}
-            <div className="w-full md:w-1/2 h-full"> {/* Changed to h-full */}
+            <div className="w-full md:w-1/3 h-full"> {/* Changed to md:w-1/3 */}
               <Link
                 href="https://github.com/Sumit-Dhakal/Monster_Shooter"
                 target="_blank"
@@ -82,7 +82,7 @@ const AboutDetails = () => {
             </div>
 
             {/* Right Side: Video */}
-            <div className="w-full md:w-1/2 h-full relative"> {/* Changed to h-full */}
+            <div className="w-full md:w-2/3 h-full relative"> {/* Changed to md:w-2/3 */}
               <div className="relative" style={{ paddingTop: "56.25%" }}>
                 <iframe
                   src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
