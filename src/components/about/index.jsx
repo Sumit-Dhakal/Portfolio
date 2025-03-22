@@ -39,15 +39,7 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-                {/* GitHub Streak */}
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
-            alt="GitHub Streak"
-            loading="lazy"
-          />
-        </ItemLayout>
+
 
         {/* Tech Stack Icons */}
         <ItemLayout className={"col-span-full"}>
@@ -55,6 +47,15 @@ const AboutDetails = () => {
             className="w-full h-auto"
             src="https://skillicons.dev/icons?i=unreal,cpp,cs,blender,github"
             alt="Tech Stack"
+            loading="lazy"
+          />
+        </ItemLayout>
+                        {/* GitHub Streak */}
+        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+          <img
+            className="w-full h-auto"
+            src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
+            alt="GitHub Streak"
             loading="lazy"
           />
         </ItemLayout>
@@ -80,11 +81,12 @@ const AboutDetails = () => {
   {/* Right Side: Monster Shooter Video */}
   <div className="flex-1">
     <video controls width="100%" height="315">
-      <source src="https://drive.google.com/file/d/1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR/view?usp=sharing" type="video/mp4" />
+      <source src="https://drive.google.com/uc?export=download&id=1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
 </ItemLayout>
+
       </div>
     </section>
   );
