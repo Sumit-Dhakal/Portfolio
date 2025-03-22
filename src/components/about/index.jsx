@@ -50,7 +50,7 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-    {/* GitHub Streak and Monster Shooter Repo with Video */}
+  {/* GitHub Streak and Monster Shooter Repo with Video */}
     <ItemLayout className={"col-span-full md:col-span-8 flex flex-col md:flex-row gap-4"}>
       {/* Left Side: GitHub Streak */}
       <div className="flex-1">
@@ -62,9 +62,8 @@ const AboutDetails = () => {
         />
       </div>
 
-      {/* Right Side: Monster Shooter Repo and Video */}
-      <div className="flex-1 flex flex-col md:flex-row gap-4">
-        {/* Monster Shooter Repo */}
+      {/* Right Side: Monster Shooter Repo with Video */}
+      <div className="flex-1">
         <Link
           href="https://github.com/Sumit-Dhakal/Monster_Shooter"
           target="_blank"
@@ -78,14 +77,16 @@ const AboutDetails = () => {
           />
         </Link>
 
-        {/* Monster Shooter Video */}
-        <video controls width="100%" height="315">
-          <source
-            src="https://drive.google.com/uc?export=download&id=1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+        {/* Video inside Monster Shooter Repo */}
+        <div className="mt-4">
+          <video controls width="100%" height="315">
+            <source
+              src="https://drive.google.com/uc?export=download&id=1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </ItemLayout>
   </div>
