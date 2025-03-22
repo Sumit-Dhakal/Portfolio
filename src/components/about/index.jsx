@@ -50,6 +50,16 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
+        {/* Tech Stack Icons */}
+        <ItemLayout className={"col-span-full"}>
+          <img
+            className="w-full h-auto"
+            src="https://skillicons.dev/icons?i=unreal,c++,blueprints,git,github,linux"
+            alt="Tech Stack"
+            loading="lazy"
+          />
+        </ItemLayout>
+
         {/* GitHub Streak */}
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <img
@@ -60,17 +70,17 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
-        {/* Featured GitHub Repo - Parkour Game */}
+        {/* Featured GitHub Repo - Monster Shooter */}
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <Link
-            href="https://github.com/Sumit-Dhakal/Parkour-SideScroller"
+            href="https://github.com/Sumit-Dhakal/Monster_Shooter"
             target="_blank"
             className="w-full"
           >
             <img
               className="w-full h-auto"
-              src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Parkour-SideScroller&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
-              alt="Parkour Game"
+              src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
+              alt="Monster Shooter Game"
               loading="lazy"
             />
           </Link>
