@@ -33,18 +33,20 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
-        {/* GitHub Stats */}
+        {/* GitHub Stats (Decreased Height) */}
         <ItemLayout className={"col-span-full md:col-span-8 !p-0"}>
-          <img
-            className="w-full h-auto"
-            src="https://github-readme-stats.vercel.app/api?username=Sumit-Dhakal&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false"
-            alt="GitHub Stats"
-            loading="lazy"
-          />
+          <div className="w-full max-h-48 overflow-hidden"> {/* Added max-h-48 */}
+            <img
+              className="w-full h-auto"
+              src="https://github-readme-stats.vercel.app/api?username=Sumit-Dhakal&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false"
+              alt="GitHub Stats"
+              loading="lazy"
+            />
+          </div>
         </ItemLayout>
 
-        {/* GitHub Streak (Moved beside GitHub Stats) */}
-        <ItemLayout className={"col-span-full md:col-span-4 "}>
+        {/* GitHub Streak */}
+        <ItemLayout className={"col-span-full md:col-span-4 min-h-72"}>
           <div className="w-full h-full">
             <img
               className="w-full h-full object-contain"
@@ -65,9 +67,9 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
-        {/* Monster Shooter Repo (Separate ItemLayout, Left Side) */}
-        <ItemLayout className={"col-span-full md:col-span-6 "}>
-          <div className="w-full h-full relative" style={{ paddingTop: "75%" }}>
+        {/* Monster Shooter Repo (Left Side, Height Matched to Video) */}
+        <ItemLayout className={"col-span-full md:col-span-6"}>
+          <div className="w-full h-full relative" style={{ paddingTop: "56.25%" }}> {/* Changed paddingTop to 56.25% */}
             <Link
               href="https://github.com/Sumit-Dhakal/Monster_Shooter"
               target="_blank"
@@ -83,8 +85,8 @@ const AboutDetails = () => {
           </div>
         </ItemLayout>
 
-        {/* Monster Shooter Video (Separate ItemLayout, Right Side) */}
-        <ItemLayout className={"col-span-full md:col-span-6 "}>
+        {/* Monster Shooter Video (Right Side) */}
+        <ItemLayout className={"col-span-full md:col-span-6"}>
           <div className="w-full h-full relative" style={{ paddingTop: "56.25%" }}>
             <iframe
               src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
