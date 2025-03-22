@@ -63,37 +63,36 @@ const AboutDetails = () => {
         </ItemLayout>
 
         {/* Monster Shooter Repo and Video */}
-        <ItemLayout className={"col-span-full md:col-span-6"}>
-          <div className="w-full h-full flex flex-col md:flex-row gap-4"> {/* Fill and flex the ItemLayout */}
-            {/* Left Side: Repo */}
-            <div className="w-full md:w-1/2"> {/* Adjust width for responsiveness */}
-              <Link
-                href="https://github.com/Sumit-Dhakal/Monster_Shooter"
-                target="_blank"
-                className="w-full h-full"
-              >
-                <img
-                  className="w-full h-full object-contain" // Use object-contain or object-cover
-                  src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
-                  alt="Monster Shooter Game"
-                  loading="lazy"
-                />
-              </Link>
-            </div>
+       <ItemLayout className={"col-span-full md:col-span-6"}>
+  <div className="w-full h-full flex flex-col md:flex-row gap-4 items-center">
+    {/* Left Side: Repo */}
+    <div className="w-full md:w-1/2 h-48">
+      <Link
+        href="https://github.com/Sumit-Dhakal/Monster_Shooter"
+        target="_blank"
+        className="w-full h-full"
+      >
+        <img
+          className="w-full h-full object-contain"
+          src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=dark&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
+          alt="Monster Shooter Game"
+          loading="lazy"
+        />
+      </Link>
+    </div>
 
-            {/* Right Side: Video */}
-            <div className="w-full md:w-1/2 relative" style={{ paddingTop: "56.25%" }}>
-              <iframe
-                src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                title="Monster Shooter Game"
-              />
-            </div>
-          </div>
-        </ItemLayout>
+    {/* Right Side: Video */}
+    <div className="w-full md:w-1/2 relative h-48" style={{ paddingTop: "56.25%" }}>
+      <iframe
+        src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
+        className="absolute top-0 left-0 w-full h-full"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+        title="Monster Shooter Game"
+      />
+    </div>
+  </div>
+</ItemLayout>
       </div>
     </section>
   );
