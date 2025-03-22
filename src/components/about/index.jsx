@@ -50,45 +50,46 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-                        {/* GitHub Streak */}
-        <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
+    {/* GitHub Streak and Monster Shooter Repo with Video */}
+    <ItemLayout className={"col-span-full md:col-span-8 flex flex-col md:flex-row gap-4"}>
+      {/* Left Side: GitHub Streak */}
+      <div className="flex-1">
+        <img
+          className="w-full h-auto"
+          src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
+          alt="GitHub Streak"
+          loading="lazy"
+        />
+      </div>
+
+      {/* Right Side: Monster Shooter Repo and Video */}
+      <div className="flex-1 flex flex-col md:flex-row gap-4">
+        {/* Monster Shooter Repo */}
+        <Link
+          href="https://github.com/Sumit-Dhakal/Monster_Shooter"
+          target="_blank"
+          className="w-full"
+        >
           <img
             className="w-full h-auto"
-            src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
-            alt="GitHub Streak"
+            src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
+            alt="Monster Shooter Game"
             loading="lazy"
           />
-        </ItemLayout>
+        </Link>
 
-{/* Featured Repo and Monster Shooter Video */}
-<ItemLayout className={"col-span-full md:col-span-8 flex flex-col md:flex-row gap-4"}>
-  {/* Left Side: Featured Repo */}
-  <div className="flex-1">
-    <Link
-      href="https://github.com/Sumit-Dhakal/Monster_Shooter"
-      target="_blank"
-      className="w-full"
-    >
-      <img
-        className="w-full h-auto"
-        src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
-        alt="Monster Shooter Game"
-        loading="lazy"
-      />
-    </Link>
-  </div>
-
-  {/* Right Side: Monster Shooter Video */}
-  <div className="flex-1">
-    <video controls width="100%" height="315">
-      <source src="https://drive.google.com/uc?export=download&id=1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</ItemLayout>
-
+        {/* Monster Shooter Video */}
+        <video controls width="100%" height="315">
+          <source
+            src="https://drive.google.com/uc?export=download&id=1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
-    </section>
+    </ItemLayout>
+  </div>
+</section>
   );
 };
 
