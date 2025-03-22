@@ -55,7 +55,7 @@ const AboutDetails = () => {
           {/* Left Side: GitHub Streak */}
           <div className="flex-1">
             <img
-              className="w-full h-[100px] md:h-[120px] object-contain"
+              className="w-full h-auto"
               src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
               alt="GitHub Streak"
               loading="lazy"
@@ -72,7 +72,7 @@ const AboutDetails = () => {
               className="w-full"
             >
               <img
-                className="w-full h-[100px] md:h-[80px] object-contain"
+                className="w-full h-auto"
                 src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
                 alt="Monster Shooter Game"
                 loading="lazy"
