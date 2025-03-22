@@ -50,11 +50,11 @@ const AboutDetails = () => {
           />
         </ItemLayout>
 
-        {/* GitHub Streak */}
-        <ItemLayout className={"col-span-full md:col-span-6 flex justify-center"}>
-          <div className="bg-gray-800 p-4 rounded-lg w-full">
+              {/* GitHub Streak */}
+        <ItemLayout className={"col-span-full md:col-span-6"}>
+          <div className="w-full h-full"> {/* Ensure the div fills the ItemLayout */}
             <img
-              className="w-full h-auto"
+              className="w-full h-full object-contain" // Use object-contain or object-cover as needed
               src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
               alt="GitHub Streak"
               loading="lazy"
@@ -63,23 +63,26 @@ const AboutDetails = () => {
         </ItemLayout>
 
         {/* Monster Shooter Repo and Video */}
-        <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
-          {/* Left Side: Repo */}
-            <Link
-              href="https://github.com/Sumit-Dhakal/Monster_Shooter"
-              target="_blank"
-              className="w-full"
-            >
-              <img
-                className="w-full h-auto"
-                src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
-                alt="Monster Shooter Game"
-                loading="lazy"
-              />
-            </Link>
+        <ItemLayout className={"col-span-full md:col-span-6"}>
+          <div className="w-full h-full flex flex-col md:flex-row gap-4"> {/* Fill and flex the ItemLayout */}
+            {/* Left Side: Repo */}
+            <div className="w-full md:w-1/2"> {/* Adjust width for responsiveness */}
+              <Link
+                href="https://github.com/Sumit-Dhakal/Monster_Shooter"
+                target="_blank"
+                className="w-full h-full"
+              >
+                <img
+                  className="w-full h-full object-contain" // Use object-contain or object-cover
+                  src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
+                  alt="Monster Shooter Game"
+                  loading="lazy"
+                />
+              </Link>
+            </div>
 
-          {/* Right Side: Video */}
-            <div className="relative" style={{ width: "100%", paddingTop: "56.25%" }}>
+            {/* Right Side: Video */}
+            <div className="w-full md:w-1/2 relative" style={{ paddingTop: "56.25%" }}>
               <iframe
                 src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1"
                 width="100%"
@@ -89,6 +92,7 @@ const AboutDetails = () => {
                 title="Monster Shooter Game"
               />
             </div>
+          </div>
         </ItemLayout>
       </div>
     </section>
