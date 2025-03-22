@@ -50,21 +50,23 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-  {/* GitHub Streak and Monster Shooter Repo with Video */}
+        
+ {/* GitHub Streak */}
     <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
       {/* Left Side: GitHub Streak */}
       <div className="flex-1">
         <img
-          className="w-full h-auto"
+          className="w-full h-[150px] object-contain"  {/* Reduced height */}
           src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
           alt="GitHub Streak"
           loading="lazy"
         />
       </div>
-</ItemLayout>
-        
+    </ItemLayout>
+
+    {/* Monster Shooter Repo and Video */}
+    <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
       {/* Right Side: Monster Shooter Repo with Video */}
-        <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
       <div className="flex-1">
         <Link
           href="https://github.com/Sumit-Dhakal/Monster_Shooter"
@@ -72,7 +74,7 @@ const AboutDetails = () => {
           className="w-full"
         >
           <img
-            className="w-full h-auto"
+            className="w-full h-[150px] object-contain"  {/* Reduced height */}
             src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
             alt="Monster Shooter Game"
             loading="lazy"
@@ -81,16 +83,18 @@ const AboutDetails = () => {
 
         {/* Video inside Monster Shooter Repo */}
         <div className="mt-4">
-          <video controls width="100%" height="315">
-            <source
-              src="https://drive.google.com/uc?export=download&id=1CwxlmaZJY1mvZ6Zw7-AJWeU13Ad6EhYR"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+          <iframe
+            src="https://player.vimeo.com/video/1068487864?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            width="100%"
+            height="315"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            title="GAME"
+          ></iframe>
         </div>
       </div>
     </ItemLayout>
+
   </div>
 </section>
   );
