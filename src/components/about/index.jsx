@@ -44,7 +44,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         {/* GitHub Streak (Moved beside GitHub Stats) */}
-        <ItemLayout className={"col-span-full md:col-span-4 min-h-72"}>
+        <ItemLayout className={"col-span-full md:col-span-4 "}>
           <div className="w-full h-full">
             <img
               className="w-full h-full object-contain"
@@ -66,7 +66,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         {/* Monster Shooter Repo (Separate ItemLayout, Left Side) */}
-        <ItemLayout className={"col-span-full md:col-span-6 min-h-72"}>
+        <ItemLayout className={"col-span-full md:col-span-6 "}>
           <div className="w-full h-full relative" style={{ paddingTop: "75%" }}>
             <Link
               href="https://github.com/Sumit-Dhakal/Monster_Shooter"
@@ -84,7 +84,7 @@ const AboutDetails = () => {
         </ItemLayout>
 
         {/* Monster Shooter Video (Separate ItemLayout, Right Side) */}
-        <ItemLayout className={"col-span-full md:col-span-6 min-h-72"}>
+        <ItemLayout className={"col-span-full md:col-span-6 "}>
           <div className="w-full h-full relative" style={{ paddingTop: "56.25%" }}>
             <iframe
               src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
