@@ -49,11 +49,10 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-
-               {/* GitHub Streak and Monster Shooter Repo with Video */}
+{/* GitHub Streak and Monster Shooter Repo with Video */}
         <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
-          {/* Left Side: GitHub Streak */}
-          <div className="flex-1">
+          {/* Left Box: GitHub Streak */}
+          <div className="flex-1 bg-gray-800 p-4 rounded-lg">
             <img
               className="w-full h-auto"
               src="https://github-readme-streak-stats.herokuapp.com?user=Sumit-Dhakal&theme=dark&hide_border=true&type=svg&background=EB545400&ring=FEFE5B&currStreakLabel=FEFE5B"
@@ -61,41 +60,40 @@ const AboutDetails = () => {
               loading="lazy"
             />
           </div>
-        </ItemLayout>
-        
- {/* GitHub Streak and Monster Shooter Repo with Video */}
-        <ItemLayout className={"col-span-full md:col-span-6 flex flex-col md:flex-row gap-4"}>
-          {/* Left Side: Monster Shooter Repo */}
-          <div className="flex-1">
-            <Link
-              href="https://github.com/Sumit-Dhakal/Monster_Shooter"
-              target="_blank"
-              className="w-full h-auto"
-            >
-              <img
-                className="w-full h-auto"
-                src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
-                alt="Monster Shooter Game"
-                loading="lazy"
-              />
-            </Link>
-          </div>
 
-          {/* Right Side: Monster Shooter Video */}
-          <div className="flex-1">
-            <div className="relative" style={{ width: "100%", paddingTop: "56.25%" }}>
-              <iframe
-                src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                title="Monster Shooter Game"
-              />
+          {/* Right Box: Repo and Video */}
+          <div className="flex-1 bg-gray-800 p-4 rounded-lg flex flex-row gap-4">
+            {/* Left side of the right box: Repo */}
+            <div className="flex-1">
+              <Link
+                className="w-full h-auto"
+                href="https://github.com/Sumit-Dhakal/Monster_Shooter"
+                target="_blank"
+              >
+                <img
+                  className="w-full h-auto"
+                  src="https://github-readme-stats.vercel.app/api/pin/?username=Sumit-Dhakal&repo=Monster_Shooter&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2"
+                  alt="Monster Shooter Game"
+                  loading="lazy"
+                />
+              </Link>
+            </div>
+
+            {/* Right side of the right box: Video */}
+            <div className="flex-1">
+              <div className="relative" style={{ width: "100%", paddingTop: "56.25%" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                  title="Monster Shooter Game"
+                />
+              </div>
             </div>
           </div>
         </ItemLayout>
-
       </div>
     </section>
   );
