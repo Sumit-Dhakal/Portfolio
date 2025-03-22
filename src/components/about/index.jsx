@@ -61,8 +61,10 @@ const AboutDetails = () => {
           loading="lazy"
         />
       </div>
-
+</ItemLayout>
+        
       {/* Right Side: Monster Shooter Repo with Video */}
+        <ItemLayout className={"col-span-full md:col-span-8 flex flex-col md:flex-row gap-4"}>
       <div className="flex-1">
         <Link
           href="https://github.com/Sumit-Dhakal/Monster_Shooter"
