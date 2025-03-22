@@ -66,7 +66,7 @@ const AboutDetails = () => {
        <ItemLayout className={"col-span-full md:col-span-6"}>
   <div className="w-full h-full flex flex-col md:flex-row gap-4 items-center">
     {/* Left Side: Repo */}
-    <div className="w-full md:w-1/2 h-48">
+    <div className="w-full md:w-1/2 h-70">
       <Link
         href="https://github.com/Sumit-Dhakal/Monster_Shooter"
         target="_blank"
@@ -82,7 +82,7 @@ const AboutDetails = () => {
     </div>
 
     {/* Right Side: Video */}
-    <div className="w-full md:w-1/2 relative h-48" style={{ paddingTop: "56.25%" }}>
+    <div className="w-full md:w-1/2 relative h-70" style={{ paddingTop: "56.25%" }}>
       <iframe
         src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
         className="absolute top-0 left-0 w-full h-full"
