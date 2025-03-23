@@ -89,7 +89,7 @@ const AboutDetails = () => {
         <ItemLayout className={"col-span-full md:col-span-6"}>
           <div className="w-full h-full relative" style={{ paddingTop: "56.25%" }}>
             <iframe
-              src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1"
+              src="https://player.vimeo.com/video/1068487864?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479&muted=1&autoplay=1"
               className="absolute top-0 left-0 w-full h-full"
               frameborder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
