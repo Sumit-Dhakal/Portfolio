@@ -69,7 +69,7 @@ const AboutDetails = () => {
 
         {/* Monster Shooter Repo (Left Side, Height Matched to Video) */}
         <ItemLayout className={"col-span-full md:col-span-6"}>
-          <div className="w-full h-full relative" style={{ paddingTop: "56.25%" }}> {/* Changed paddingTop to 56.25% */}
+          <div className="w-full h-full relative" style={{ paddingTop: "50.25%" }}> {/* Changed paddingTop to 56.25% */}
             <Link
               href="https://github.com/Sumit-Dhakal/Monster_Shooter"
               target="_blank"
